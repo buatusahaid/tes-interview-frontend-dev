@@ -1,33 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
-</head>
-<body>
-    
-    <form action="#">
-        <div>
-            <label for="surname">Nama Lengkap</label>
-            <input type="text" id="surname" name="surname" />
-        </div>
-        <div>
-            <label for="phone">Nomor HP</label>
-            <input type="text" id="phone" name="phone" />
-        </div>
-        <div>
-            <label for="address">Alamat</label>
-            <input type="text" id="address" name="address" />
-        </div>
-        <div>
-            <label for="gender">Jenis Kelamin</label>
-            <input type="file" id="gender" name="gender" />
-        </div>
+    <title>Formulir</title>
 
-        <button type="button">Kirim</button>
-    </form>
-
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-purple-900 p-8">
+    <div class="sm:flex sm:justify-center sm:w-full">
+      <div
+        class="max-w-[1200px] w-full flex md:ring md:ring-gray-200 md:p-8 md:rounded-md md:shadow-lg"
+      >
+        <div class="w-full hidden md:flex items-center">
+          <img class="" src="nurse.svg" alt="" />
+        </div>
+        <div class="w-[1000px]">
+          <form action="#" method="POST">
+            <h1 class="font-semibold text-2xl text-gray-200 mb-8">Formulir</h1>
+            <div class="flex flex-col mb-4">
+              <label class="font-semibold text-gray-200" for="surname"
+                >Nama Lengkap</label
+              >
+              <input
+                class="border border-gray-500 rounded-md outline-none px-2 py-1.5 text-base focus:ring focus:ring-gray-500"
+                placeholder="Masukan nama"
+                type="text"
+                id="surname"
+                name="surname"
+              />
+            </div>
+            <div class="flex flex-col mb-4">
+              <label class="font-semibold text-gray-200" for="phone"
+                >Nomor HP</label
+              >
+              <input
+                class="border border-gray-500 rounded-md outline-none px-2 py-1.5 text-base focus:ring focus:ring-gray-500"
+                placeholder="Masukan nomor HP"
+                type="tel"
+                id="phone"
+                name="phone"
+              />
+            </div>
+            <div class="flex flex-col mb-4">
+              <label class="font-semibold text-gray-200" for="surname"
+                >Alamat</label
+              >
+              <input
+                class="border border-gray-500 rounded-md outline-none px-2 py-1.5 text-base focus:ring focus:ring-gray-500"
+                placeholder="Masukan alamat"
+                type="text"
+                id="address"
+                name="address"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="gender" class="block mb-2 text-gray-200 font-medium"
+                >Jenis Kelamin</label
+              >
+              <select
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring focus:ring-gray-500 block w-full p-2.5"
+                id="gender"
+                name="gender"
+              >
+                <option selected>Pilih jenis kelamin</option>
+                <option>Laki - Laki</option>
+                <option>Perempuan</option>
+              </select>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="font-semibold text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-12 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              >
+                Kirim
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
