@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Buat Usaha Frontend Interview Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <form action="#">
-        <div>
-            <label for="surname">Nama Lengkap</label>
-            <input type="text" id="surname" name="surname" />
-        </div>
-        <div>
-            <label for="phone">Nomor HP</label>
-            <input type="text" id="phone" name="phone" />
-        </div>
-        <div>
-            <label for="address">Alamat</label>
-            <input type="text" id="address" name="address" />
-        </div>
-        <div>
-            <label for="gender">Jenis Kelamin</label>
-            <input type="file" id="gender" name="gender" />
-        </div>
 
-        <button type="button">Kirim</button>
-    </form>
+<body>
+    <div class="w-full h-screen bg-black/[.6] flex items-center justify-center">
+        <div class="card w-[40%] p-5">
+            <h2 class="text-center text-white font-bold text-3xl mb-5">Form</h2>
+            <form action="#" class="text-white space-y-3">
+                <div class="flex flex-col space-y-1">
+                    <label for="surname">Nama Lengkap</label>
+                    <input type="text" id="surname" name="surname" class="text-black rounded-lg bg-gray-200 placeholder-gray-500 py-2 px-4 focus:ring-blue-600 focus:border-blue-600" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="phone">Nomor HP</label>
+                    <input type="text" id="phone" name="phone" class="text-black rounded-lg bg-gray-200 placeholder-gray-500 py-2 px-4 focus:ring-blue-600 focus:border-blue-600" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="address">Alamat</label>
+                    <input type="text" id="address" name="address" class="text-black rounded-lg bg-gray-200 placeholder-gray-500 py-2 px-4 focus:ring-blue-600 focus:border-blue-600" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="gender">Jenis Kelamin</label>
+                    <!-- <input type="file" id="gender" name="gender" /> -->
+                    <select name="gender" id="gender" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="0" selected>Pilih jenis kelamin</option>
+                        <option value="1">Laki-laki</option>
+                        <option value="2">Perempuan</option>
+                    </select>
+                </div>
+
+                <button type="button" class="bg-blue-500 hover:bg-blue-600 w-full rounded-lg px-4 py-2">Kirim</button>
+            </form>
+        </div>
+    </div>
 
 </body>
+
 </html>
